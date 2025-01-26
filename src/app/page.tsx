@@ -1,5 +1,7 @@
 'use client';
 import React, {useState} from "react";
+import {Button} from "@/components/ui/button";
+import {Input} from "@/components/ui/input";
 
 export default function Home() {
   const [formData, setFormData] = useState({ name: '', email: '', source: '' });
@@ -20,26 +22,11 @@ export default function Home() {
 
   return (
       <div className="p-6 max-w-lg mx-auto">
-        <input
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-        />
-        <input
-            placeholder="Email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-        />
-        <input
-            placeholder="Source"
-            name="source"
-            value={formData.source}
-            onChange={handleChange}
-        />
+          <Input className="m-2" value={formData.name} onChange={handleChange} type="text" placeholder="Name" />
+          <Input className="m-2"  value={formData.email} onChange={handleChange} type="email" placeholder="Email" />
+          <Input className="m-2"  value={formData.source} onChange={handleChange} type="text" placeholder="Source" />
 
-        <button onClick={handleSubmit}>Submit</button>
+        <Button onClick={handleSubmit}>Submit</Button>
 
       </div>
   );
