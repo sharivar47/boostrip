@@ -34,3 +34,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ 
+## Use Database 
+i create next_js.sql file for database to use it import this file in phpmyadmin or etc and use name in src/lib/db.ts to connect database
+
+## Tips to Improve the Real Project
+- use classes for send request to api in real project i create class like Api.ts i create get , post , put , delete and main function send that implement send request to api
+- implement base component for forms i use formik and yup for create forms 
+- i divide each page into small components 
+- create a class for define api routes i create one function for every api route and use this functions in components
+
+
+
+
+
+
